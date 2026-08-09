@@ -30,6 +30,7 @@ exports.auth = (0, better_auth_1.betterAuth)({
         crossSubDomainCookies: {
             enabled: true,
             domain: ".mk-flower.am",
+            // additionalCookies: ["auth"],
         },
         useSecureCookies: true,
     },

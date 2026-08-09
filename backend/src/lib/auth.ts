@@ -16,6 +16,7 @@ export const auth = betterAuth({
     crossSubDomainCookies: {
       enabled: true,
       domain: ".mk-flower.am",
+      // additionalCookies: ["auth"],
     },
     useSecureCookies: true,
   },
