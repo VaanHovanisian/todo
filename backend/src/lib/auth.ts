@@ -13,11 +13,11 @@ export const auth = betterAuth({
   trustedOrigins: [process.env.FRONTEND_URL!],
   advanced: {
     cookiePrefix: "auth",
-    crossSubDomainCookies: {
-      enabled: true,
-      domain: ".mk-flower.am",
-    },
-    useSecureCookies: true,
+    // crossSubDomainCookies: {
+    //   enabled: true,
+    //   domain: ".mk-flower.am",
+    // },
+    // useSecureCookies: true,
   },
   emailAndPassword: {
     enabled: true,
