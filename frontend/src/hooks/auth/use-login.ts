@@ -17,7 +17,7 @@ export const useLogin = () => {
     await signIn.email({
       email: data.email,
       password: data.password,
-      callbackURL: process.env.NEXT_PUBLIC_FRONTEND_URL,
+      callbackURL: process.env.NEXT_PUBLIC_AUTH_URL,
       fetchOptions: {
         onSuccess() {
           toast.success("Success Login");
@@ -31,6 +31,7 @@ export const useLogin = () => {
     });
   };
   return {
-    onSubmit, form
-  }
+    onSubmit,
+    form,
+  };
 };
