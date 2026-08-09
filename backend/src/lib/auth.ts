@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 // If your Prisma file is located elsewhere, you can change the path
@@ -20,7 +22,7 @@ export const auth = betterAuth({
   emailAndPassword: {
     enabled: true,
   },
-  user: {fields: {}},
+  user: { fields: {} },
   emailVerification: {
     autoSignInAfterVerification: true,
     sendOnSignUp: true,
